@@ -5,11 +5,27 @@ Rahman Usta
 :lang: en
 :toc: left
 :numbered:
-:terminalfx-version: 1.3
+:terminalfx-version: 1.4
+:description: TerminalFX is a terminal (PTY) emulator application written in JavaFX.
+:author: Rahman Usta
+:keywords: terminal,emulator,java,javafx,tty
+
+++++
+<a class="view-github" href="https://github.com/javaterminal/TerminalFX">View on Github</a>
+<style>
+ .imageblock {
+    text-align: center !important;
+ }
+ 
+ .view-github {
+    float: right;
+ }
+</style>
+++++
 
 == JavaFX Terminal Emulator
 
-TerminalFX is a terminal (PTY) emulator application written in JavaFX 8.
+TerminalFX is a terminal (PTY) emulator application written in JavaFX.
 
 We use https://github.com/traff/pty4j[Pty4J] to get VT codes from running process and https://chromium.googlesource.com/apps/libapps/+/master/hterm/[hterm.js] from Chromium project to interact with Pty4J. TerminalFX is using powerful JavaFX WebView component to run hterm.js.
 
@@ -34,7 +50,7 @@ TabPane tabPane = new TabPane();
 tabPane.getTabs().add(terminal);    
 ----
 
-image::images\default.png[]
+image::https://raw.githubusercontent.com/javaterminal/TerminalFX/master/images/default.png[]
 
 .Dark Config
 [source,java]
@@ -51,7 +67,7 @@ TabPane tabPane = new TabPane();
 tabPane.getTabs().add(terminal);
 ----
 
-image::images\dark.png[]
+image::https://raw.githubusercontent.com/javaterminal/TerminalFX/master/images/dark.png[]
 
 == CygWin Support
 
@@ -68,7 +84,7 @@ tabPane.getTabs().add(terminal);
 ----
 <1> Set bash in cygwin path
 
-image::images\cygwin.png[]
+image::https://raw.githubusercontent.com/javaterminal/TerminalFX/master/images/cygwin.png[]
 
 == Maven Dependency
 
