@@ -90,7 +90,7 @@ image::images\cygwin.png[]
 </dependency>
 ----
 
-== Compile & Run
+== Compile and Run
 
 [source,bash]
 ----
