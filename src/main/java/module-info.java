@@ -14,5 +14,4 @@ module terminalfx {
     exports com.terminalfx;
     exports com.terminalfx.config to jackson.databind;
 
-
 }

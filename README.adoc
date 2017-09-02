@@ -86,7 +86,7 @@ image::images\cygwin.png[]
 <dependency>
     <groupId>com.asciidocfx</groupId>
     <artifactId>terminalfx</artifactId>
-    <version>1.3</version>
+    <version>1.4</version>
 </dependency>
 ----
 
@@ -96,8 +96,8 @@ image::images\cygwin.png[]
 ----
 git clone https://github.com/rahmanusta/TerminalFX
 cd TerminalFX
-mvn clean install
-mvn exec:java -Dexec.mainClass="com.terminalfx.AppStarter"
+mvn clean install dependency:copy-dependencies
+java --module-path %JAVA_HOME%/jmods;target\terminalfx.jar;target\dependency --add-modules terminalfx -m terminalfx/com.terminalfx.AppStarter
 ----
 
 == Licence
